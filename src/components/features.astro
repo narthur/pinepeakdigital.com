@@ -2,41 +2,46 @@
 // @ts-ignore
 import { Icon } from "astro-icon/components";
 
-const features = [
+const features: {
+  title: string;
+  description: string;
+  icon: string;
+
+}[] = [
   {
-    title: "Bring Your Own Framework",
+    title: "Exploration & Ideation",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
+      "We bring our expertise to the table to help you define your needs and understand the possibilities that modern web technologies enable.",
     icon: "bx:bxs-briefcase",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Risk Assessment",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
-  },
-  {
-    title: "On-Demand Components",
-    description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
+      "We work with you to identify potential risks early on, so you can make informed decisions and avoid costly mistakes. We provide you with a detailed list of actions to mitigate these risks and ensure a successful project.",
     icon: "bx:bxs-data",
   },
   {
-    title: "Broad Integration",
+    title: "Project Scoping",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
+      "We help you define the scope of your project, including the features, functionality, and timeline. We also provide you with a detailed project plan that outlines the key milestones and deliverables.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Contract Review & Approval",
+    description:
+      "We review the contract with you to ensure that it accurately reflects the scope of the project and the terms of our engagement.",
     icon: "bx:bxs-bot",
   },
   {
-    title: "SEO Enabled",
+    title: "Execution",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
+      "We execute the project plan, working closely with you to ensure that the project stays on track and meets your expectations.",
     icon: "bx:bxs-file-find",
   },
   {
-    title: "Community",
+    title: "Retrospective",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
+      "We meet with you to review what went well and what could be improved. We use this feedback to continuously improve our processes and deliver better results for our clients.",
     icon: "bx:bxs-user",
   },
 ];
@@ -44,7 +49,7 @@ const features = [
 
 <div class="mt-16 md:mt-0">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
+    Understand our process
   </h2>
   <p class="text-lg mt-4 text-slate-600">
     Astro comes batteries included. It takes the best parts of state-of-the-art
@@ -54,10 +59,10 @@ const features = [
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
   {
-    features.map((item) => (
+    features.map((item, i) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
+        <div class="mt-1 bg-black rounded-full p-1 w-8 h-8 shrink-0 text-white text-center align-middle font-bold">
+          {i}
         </div>
         <div>
           <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
