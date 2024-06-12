@@ -6,12 +6,12 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 
 // Filter blog entries with 'draft: false' & date before current date
-const publishedBlogEntries = await getCollection("blog", ({ data }) => {
+const entries = await getCollection("portfolio", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
 
 // Sort content entries by publication date
-publishedBlogEntries.sort(function (a, b) {
+entries.sort(function (a, b) {
   return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
 });
 ---
@@ -27,9 +27,9 @@ publishedBlogEntries.sort(function (a, b) {
     <main class="mt-16">
       <ul class="grid gap-16 max-w-4xl mx-auto">
         {
-          publishedBlogEntries.map((blogPostEntry, index) => (
+          entries.map((blogPostEntry, index) => (
             <li>
-              <a href={`/blog/${blogPostEntry.slug}`}>
+              <a href={`/portfolio/${blogPostEntry.slug}`}>
                 <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
                   <Picture
                     src={blogPostEntry.data.image.src}
@@ -49,18 +49,6 @@ publishedBlogEntries.sort(function (a, b) {
                     <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 ">
                       {blogPostEntry.data.title}
                     </h2>
-
-                    <div class="flex gap-2 mt-3">
-                      <span class="text-gray-400">
-                        {blogPostEntry.data.author}
-                      </span>
-                      <span class="text-gray-400">• </span>
-                      <time
-                        class="text-gray-400"
-                        datetime={blogPostEntry.data.publishDate.toISOString()}>
-                        {blogPostEntry.data.publishDate.toDateString()}
-                      </time>
-                    </div>
                   </div>
                 </div>
               </a>
