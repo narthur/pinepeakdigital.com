@@ -1,0 +1,100 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const referrals: {
+  title: string;
+  description: string;
+  image: string;
+}[] = [
+  {
+    title: "Matthew Leffler",
+    description:
+      "I've worked with few people able to bring the level of exactness and rigor that Nathan brings to his work. Nathan and I have worked together in a variety of roles over the last 10 years. He is process-driven, relentlessly refining and curating for greater efficiency and higher-quality outcomes. I’ve always appreciated his care for his craft and the continual learning and insights he brings to a team.",
+    image: "matthew_leffler.jpg",
+  },
+  {
+    title: "Alistair Huong",
+    description:
+      "I’ve had the opportunity to work with Nathan in different capacities for over 10 years, and specifically in his role as a software developer in the context of AudioVerse. He is meticulous, thoughtful, and easy to work with. He possesses a natural conscientiousness about the details, is forward-thinking about potential risks, and blends it all with a good sense of aesthetics. I’ve appreciated his can-do attitude, even with new ideas and technologies, and his willingness to collaborate with all stakeholders. His excellent communication skills are a real asset to complement his technical capabilities.",
+    image: "alistair_huong.jpg",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    What people are saying
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    We can talk all we want about how great we are, but we think it's better to
+    let our clients and partners do the talking. Here's what some of them have
+    to say about working with us.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-2 mt-16 gap-16">
+  {
+    referrals.map((item, i) => (
+      <div class="flex gap-4 items-start">
+        <div class="referral_pair">
+          <div class="title_avatar">
+            <img
+              src={item.image}
+              alt={item.title}
+              class="rounded-full w-12 h-12"
+            />
+            <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          </div>
+          <div>
+            <p class="text-slate-500 mt-2 leading-relaxed description">
+              {item.description}
+            </p>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .referral_pair {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .title_avatar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .description {
+    position: relative;
+    margin: auto 1.3rem;
+    margin-top: 1rem;
+  }
+  .description:before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-top: 10px solid rgba(145, 186, 208, 0.29);
+    border-left: 10px solid rgba(145, 186, 208, 0.29);
+    border-top-left-radius: 1rem;
+    position: absolute;
+    top: -1rem;
+    left: -1.3rem;
+    filter: blur(1px);
+  }
+  .description:after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-bottom: 10px solid rgba(145, 186, 208, 0.29);
+    border-right: 10px solid rgba(145, 186, 208, 0.29);
+    border-bottom-right-radius: 1rem;
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    filter: blur(1px);
+  }
+</style>
