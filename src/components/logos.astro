@@ -2,57 +2,76 @@
 // @ts-ignore
 import { Icon } from "astro-icon/components";
 
-const icons = [
-"amazonaws",
-"astro",
-"docker",
-"express",
-"github",
-"googlecloud",
-"jest",
-"less",
-"mailgun",
-"nodedotjs",
-"npm",
-"openai",
-"php",
-"pnpm",
-"preact",
-"puppeteer",
-"python",
-"react",
-"reactquery",
-"reactrouter",
-"render",
-"sass",
-"shopify",
-"svelte",
-"tailwindcss",
-"typescript",
-"vercel",
-"vite",
-"vitest",
-"gatsby",
-"netlify",
-"cloudflare",
-"wordpress",
-"ruby",
-"eslint",
-"prettier",
-"rubyonrails"
-]
+const icons = {
+"amazonaws": "Amazon Web Services",
+"astro": "Astro",
+"docker": "Docker",
+"express": "Express",
+"github": "GitHub",
+"googlecloud": "Google Cloud Platform",
+"jest": "Jest",
+"less": "Less",
+"mailgun": "Mailgun",
+"nodedotjs": "Node.js",
+"npm": "NPM",
+"openai": "OpenAI API",
+"php": "PHP",
+"pnpm": "PNPM",
+"preact": "Preact",
+"puppeteer": "Puppeteer",
+"python": "Python",
+"react": "React",
+"reactquery": "TanStack Query",
+"reactrouter": "React Router",
+"render": "Render.com",
+"sass": "Sass",
+"shopify": "Shopify custom themes",
+"svelte": "Svelte",
+"tailwindcss": "Tailwind CSS",
+"typescript": "TypeScript",
+"vercel": "Vercel",
+"vite": "Vite",
+"vitest": "Vitest",
+"gatsby": "Gatsby",
+"netlify": "Netlify",
+"cloudflare": "Cloudflare",
+"wordpress": "WordPress custom themes & plugins",
+"ruby": "Ruy",
+"eslint": "ESLint",
+"prettier": "Prettier",
+"rubyonrails": "Ruby on Rails",
+"circleci": "CircleCI",
+"esbuild": "esbuild",
+"git": "Git",
+"githubactions": "GitHub Actions",
+"googleanalytics": "Google Analytics",
+"jekyll": "Jekyll",
+"jquery": "jQuery",
+"slack": "Slack custom bots",
+"telegram": "Telegram custom bots",
+"awslambda": "AWS Lambda",
+"electron": "Electron",
+"flask": "Flask",
+"airtable": "Airtable",
+"amazoncloudwatch": "Amazon CloudWatch",
+"amazonec2": "Amazon EC2",
+"amazonecs": "Amazon ECS",
+"amazonrds": "Amazon RDS",
+"amazons3": "Amazon S3",
+"wasabi": "Wasabi",
+}
 ---
 
 <div class="mt-24">
   <h2 class="text-center text-slate-500">A few of the technologies we've used in previous projects</h2>
   <div class="flex gap-8 items-center justify-center mt-10 flex-wrap">
     {
-      icons.sort((a,b) => {
+      Object.keys(icons).sort((a,b) => {
         if (a < b) return -1;
         if (a > b) return 1;
         return 0;
-      }).map(icon => (
-        <Icon class="size-8" name={`simple-icons:${icon}`} />
+      }).map(k => (
+        <Icon class="size-8" name={`simple-icons:${k}`} title={icons[k]} />
       ))
     }
   </div>
