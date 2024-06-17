@@ -22,7 +22,7 @@ const referrals: {
 ];
 ---
 
-<div class="mt-16 md:mt-0">
+<div class="mt-24">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
     What people are saying
   </h2>
@@ -37,8 +37,8 @@ const referrals: {
   {
     referrals.map((item, i) => (
       <div class="flex gap-4 items-start">
-        <div class="referral_pair">
-          <div class="title_avatar">
+        <div class="flex flex-col gap-1">
+          <div class="flex items-center gap-4">
             <img
               src={item.image}
               alt={item.title}
@@ -48,7 +48,7 @@ const referrals: {
           </div>
           <div>
             <p class="text-slate-500 mt-2 leading-relaxed description">
-              {item.description}
+              "{item.description}"
             </p>
           </div>
         </div>
@@ -56,45 +56,3 @@ const referrals: {
     ))
   }
 </div>
-
-<style>
-  .referral_pair {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-  }
-  .title_avatar {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
-  .description {
-    position: relative;
-    margin: auto 1.3rem;
-    margin-top: 1rem;
-  }
-  .description:before {
-    content: "";
-    width: 50px;
-    height: 50px;
-    border-top: 10px solid rgba(145, 186, 208, 0.29);
-    border-left: 10px solid rgba(145, 186, 208, 0.29);
-    border-top-left-radius: 1rem;
-    position: absolute;
-    top: -1rem;
-    left: -1.3rem;
-    filter: blur(1px);
-  }
-  .description:after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    border-bottom: 10px solid rgba(145, 186, 208, 0.29);
-    border-right: 10px solid rgba(145, 186, 208, 0.29);
-    border-bottom-right-radius: 1rem;
-    position: absolute;
-    bottom: -1rem;
-    right: -1rem;
-    filter: blur(1px);
-  }
-</style>
