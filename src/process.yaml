@@ -51,7 +51,6 @@ steps:
       agenda:
         - Review of project scope
         - Discussion of key milestones
-        - Q&A
       deliverables:
         - Meeting summary
         - Project plan
