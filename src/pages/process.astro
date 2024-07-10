@@ -3,6 +3,7 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import data from "../process.yaml";
+import Cta from "@components/cta.astro";
 ---
 
 <Layout title="Process">
@@ -74,5 +75,7 @@ import data from "../process.yaml";
         ))
       }
     </div>
+
+    <Cta />
   </Container>
 </Layout>

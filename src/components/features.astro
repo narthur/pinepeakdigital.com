@@ -2,6 +2,7 @@
 // @ts-ignore
 import { Icon } from "astro-icon/components";
 import data from "../process.yaml";
+import Link from "./ui/link.astro";
 ---
 
 <div class="mt-16 md:mt-0">
@@ -29,4 +30,22 @@ import data from "../process.yaml";
       </div>
     ))
   }
+</div>
+
+<div class="mt-6 flex flex-col sm:flex-row gap-3">
+  <Link
+    href="/contact"
+    class="flex gap-1 items-center justify-center"
+    rel="noopener">
+    <Icon class="text-white w-5 h-5" name="bx:rocket" />
+    Start Now
+  </Link>
+  <Link
+    size="lg"
+    style="outline"
+    href="/process"
+    class="flex gap-1 items-center justify-center">
+    <Icon class="text-black w-5 h-5" name="bx:book-open" />
+    Learn More
+  </Link>
 </div>
