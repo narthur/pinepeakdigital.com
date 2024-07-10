@@ -1,50 +1,7 @@
 ---
 // @ts-ignore
 import { Icon } from "astro-icon/components";
-
-const features: {
-  title: string;
-  description: string;
-  icon: string;
-
-}[] = [
-  {
-    title: "Exploration & Ideation",
-    description:
-      "We bring our expertise to the table to help you define your needs and understand the possibilities that modern web technologies enable.",
-    icon: "bx:bxs-briefcase",
-  },
-  {
-    title: "Risk Assessment",
-    description:
-      "We work with you to identify potential risks early on, so you can make informed decisions and avoid costly mistakes. We provide you with a detailed list of actions to mitigate these risks and ensure a successful project.",
-    icon: "bx:bxs-data",
-  },
-  {
-    title: "Project Scoping",
-    description:
-      "We help you define the scope of your project, including the features, functionality, and timeline. We also provide you with a detailed project plan that outlines the key milestones and deliverables.",
-    icon: "bx:bxs-window-alt",
-  },
-  {
-    title: "Contract Review & Approval",
-    description:
-      "We review the contract with you to ensure that it accurately reflects the scope of the project and the terms of our engagement.",
-    icon: "bx:bxs-bot",
-  },
-  {
-    title: "Execution",
-    description:
-      "We execute the project plan, working closely with you to ensure that the project stays on track and meets your expectations.",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Retrospective",
-    description:
-      "We meet with you to review what went well and what could be improved. We use this feedback to continuously improve our processes and deliver better results for our clients.",
-    icon: "bx:bxs-user",
-  },
-];
+import data from "../process.yaml";
 ---
 
 <div class="mt-16 md:mt-0">
@@ -52,19 +9,21 @@ const features: {
     Understand our process
   </h2>
   <p class="text-lg mt-4 text-slate-600">
-    We follow a proven process to ensure that your project is delivered on time and on budget. Our process is designed to help you define your needs, identify potential risks, and execute your project with precision and care.
+    We follow a proven process to ensure that your project is delivered on time
+    and on budget. Our process is designed to help you define your needs,
+    identify potential risks, and execute your project with precision and care.
   </p>
 </div>
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
   {
-    features.map((item, i) => (
+    data.steps.map((item, i) => (
       <div class="flex gap-4 items-start">
         <div class="mt-1 bg-black rounded-full p-1 w-8 h-8 shrink-0 text-white text-center align-middle font-bold">
           {i}
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <h3 class="font-semibold text-lg">{item.name}</h3>{" "}
           <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>

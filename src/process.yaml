@@ -1,0 +1,101 @@
+steps:
+  - name: Exploration & Ideation
+    description: >
+      We bring our expertise to the table to help you define your needs and 
+      understand the possibilities that modern web technologies enable.
+    meeting:
+      time: 1 hour
+      attendees:
+        - Client business lead
+        - Client tech lead
+        - Our project lead
+        - Our tech lead
+      agenda:
+        - Introductions
+        - Overview of project goals
+        - Discussion of technical requirements
+        - Q&A
+      deliverables:
+        - Meeting summary
+  - name: Risk Assessment
+    description: >
+      We work with you to identify potential risks early on, so you can make 
+      informed decisions and avoid costly mistakes. We provide you with a 
+      detailed list of actions to mitigate these risks and ensure a 
+      successful project.
+    meeting:
+      time: 1 hour
+      attendees:
+        - Client business lead
+        - Client tech lead
+        - Our project lead
+        - Our tech lead
+      agenda:
+        - Review of potential risks
+        - Discussion of mitigation strategies
+        - Q&A
+      deliverables:
+        - Meeting summary
+        - Risk assessment report
+        - Mitigation plan
+  - name: Project Scoping
+    description: >
+      We help you define the scope of your project, including the features, 
+      functionality, and timeline. We also provide you with a detailed 
+      project plan that outlines the key milestones and deliverables.
+    meeting:
+      time: 1 hour
+      attendees:
+        - Client business lead
+        - Client tech lead
+        - Our project lead
+        - Our tech lead
+      agenda:
+        - Review of project scope
+        - Discussion of key milestones
+        - Q&A
+      deliverables:
+        - Meeting summary
+        - Project plan
+        - Timeline
+        - Proposed contract
+  - name: Contract Review & Approval
+    description: >
+      We review the contract with you to ensure that it accurately reflects 
+      the scope of the project and the terms of our engagement.
+    meeting:
+      time: 1 hour
+      attendees:
+        - Client business lead
+        - Client tech lead
+        - Our project lead
+        - Our tech lead
+      agenda:
+        - Review of contract terms
+        - Discussion of payment schedule
+        - Q&A
+      deliverables:
+        - Meeting summary
+        - Signed contract
+  - name: Execution
+    description: >
+      We execute the project plan, working closely with you to ensure that 
+      the project stays on track and meets your expectations.
+  - name: Retrospective
+    description: >
+      We meet with you to review what went well and what could be improved. 
+      We use this feedback to continuously improve our processes and deliver 
+      better results for our clients.
+    meeting:
+      time: 1 hour
+      attendees:
+        - Client business lead
+        - Client tech lead
+        - Our project lead
+        - Our tech lead
+      agenda:
+        - Review of project outcomes
+        - Discussion of lessons learned
+        - Q&A
+      deliverables:
+        - Meeting summary
