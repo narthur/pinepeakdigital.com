@@ -14,7 +14,6 @@ steps:
         - Introductions
         - Overview of project goals
         - Discussion of technical requirements
-        - Q&A
       deliverables:
         - Meeting summary
   - name: Risk Assessment
@@ -33,7 +32,6 @@ steps:
       agenda:
         - Review of potential risks
         - Discussion of mitigation strategies
-        - Q&A
       deliverables:
         - Meeting summary
         - Risk assessment report
@@ -73,7 +71,6 @@ steps:
       agenda:
         - Review of contract terms
         - Discussion of payment schedule
-        - Q&A
       deliverables:
         - Meeting summary
         - Signed contract
@@ -96,6 +93,5 @@ steps:
       agenda:
         - Review of project outcomes
         - Discussion of lessons learned
-        - Q&A
       deliverables:
         - Meeting summary
