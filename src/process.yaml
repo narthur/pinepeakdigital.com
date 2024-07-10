@@ -1,0 +1,123 @@
+steps:
+  - name: Exploration & Ideation
+    description: >
+      We bring our expertise to the table to help you define your needs and 
+      understand the possibilities that modern web technologies enable.
+    meeting:
+      time: 1 hour
+      attendees:
+        - Client business lead
+        - Client tech lead
+        - Our project lead
+        - Our tech lead
+      agenda:
+        - Introductions
+        - Define project objectives
+        - Identify technical requirements
+        - Schedule risk assessment meeting
+      deliverables:
+        - Meeting summary
+        - Action items
+  - name: Risk Assessment
+    description: >
+      We work with you to identify potential risks early on, so you can make 
+      informed decisions and avoid costly mistakes. We provide you with a 
+      detailed list of actions to mitigate these risks and ensure a 
+      successful project.
+    notes: >
+      If, after our initial risk assessment, we identify significant risks—such as 
+      those rated high in likelihood and impact, or involving critical dependencies—we 
+      may request that we schedule an additional meeting.
+    meeting:
+      time: 1 hour
+      attendees:
+        - Client business lead
+        - Client tech lead
+        - Our project lead
+        - Our tech lead
+      agenda:
+        - Review project objectives
+        - Capture potential risks to project success
+        - Categorize risks (e.g., technical, resource-based, timeline-related, etc.)
+        - Rank risks by likelihood and impact
+        - Identify risks that involve critical dependencies
+        - Brainstorm mitigation strategies
+        - Schedule project scoping meeting
+      deliverables:
+        - Meeting summary
+        - Action items
+        - Risk assessment report
+        - Mitigation plan
+  - name: Project Scoping
+    description: >
+      We help you define the scope of your project, including the features, 
+      functionality, and timeline. We also provide you with a detailed 
+      project plan that outlines the key milestones and deliverables.
+    meeting:
+      time: 1 hour
+      attendees:
+        - Client business lead
+        - Client tech lead
+        - Our project lead
+        - Our tech lead
+      agenda:
+        - Review project objectives
+        - Review risks & mitigations
+        - Define project scope
+        - Identify key milestones
+        - Discuss desired timeline
+        - Discuss desired cadence, content, and channel of project updates
+        - Optionally, schedule additional meetings as needed
+        - Schedule contract review meeting
+      deliverables:
+        - Meeting summary
+        - Project plan
+        - Timeline
+        - Proposed contract
+  - name: Contract Review & Approval
+    description: >
+      We review the contract with you to ensure that it accurately reflects 
+      the scope of the project and the terms of our engagement.
+    nodes: >
+      We will endeavor to provide you with a proposed contract at least 48
+      hours before the scheduled meeting. We will expect that you've
+      reviewed the contract before the meeting.
+    meeting:
+      time: 30 minutes
+      attendees:
+        - Client business lead
+        - Our project lead
+      agenda:
+        - Review contract terms
+        - Review payment schedule
+      deliverables:
+        - Meeting summary
+        - Signed contract
+  - name: Execution
+    description: >
+      We execute the project plan, working closely with you to ensure that 
+      the project stays on track and meets your expectations.
+    deliverables:
+      - Project updates on agreed cadence
+      - Deliverables as outlined in signed contract
+  - name: Retrospective
+    description: >
+      We meet with you to review what went well and what could be improved. 
+      We use this feedback to continuously improve our processes and deliver 
+      better results for our clients.
+    notes: >
+      We ask that you prepare your honest feedback and suggestions prior
+      to the meeting. This will help us make the most of our time together.
+    meeting:
+      time: 30 minutes
+      attendees:
+        - Client business lead
+        - Client tech lead
+        - Our project lead
+        - Our tech lead
+      agenda:
+        - Review project outcomes
+        - Discuss what went well
+        - Discuss what could be improved
+      deliverables:
+        - Meeting summary
